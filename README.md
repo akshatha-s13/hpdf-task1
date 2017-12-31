@@ -1,21 +1,24 @@
 # hpdf-task1
 
-Assuming you’ve already installed Node.js, create a directory to hold your application, and make that your working directory.
+This task helps beginners in understanding the basics of NodeJS-Express.
 
-$ mkdir myapp
+1)Install Node.js
+https://nodejs.org/en/
 
-$ cd myapp
-
-Use the npm init command to create a package.json file for your application. 
-
-$ npm init
-
-This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:
-entry point: (index.js)
-Enter app.js, or whatever you want the name of the main file to be. If you want it to be index.js, hit RETURN to accept the suggested default file name.
-
-Now install Express in the myapp directory and save it in the dependencies list. For example:
-
-$ npm install express --save
-
+2)Install Express
 https://expressjs.com/en/starter/installing.html
+
+3)Run the app by executing following command-
+  $node app.js
+  
+  Load http://localhost:8080/ in a browser to see the output.
+
+Endpoints and their expected outputs :
+/		          Displays simple string like "Hello World- Akshatha"
+/authors	    Fetches list of authors and posts from an API and prints a list of authors and the count of their posts
+/setcookie		The server sets two cookies (name, age) which contains the name and age of the author 
+/getcookies		Displays the contents of the cookies saved previously by /setcookie endpoint
+/robots.txt		Denies request to this page
+/html	      	Renders a HTML page
+/input	    	Renders a HTML form that sends user entered data to POST /input
+   	    	    Displays the data sent from GET /input to the browser as response and in the Console also
